@@ -92,9 +92,11 @@ namespace DarkSkySharp.Tests
             DarkSky darkSky = new DarkSky();
             Geolocation location = new Geolocation();
             //string expected = string.Empty; // TODO: Initialize to an appropriate value
-            List<KeyValuePair<Geolocation, int>> list = new List<KeyValuePair<Geolocation, int>>();
-            KeyValuePair<Geolocation, int> kv = new KeyValuePair<Geolocation, int>(location, 1331416523);
-            list.Add(kv);
+            List<KeyValuePair<Geolocation, int>> list = new List<KeyValuePair<Geolocation, int>>()
+            {
+                new KeyValuePair<Geolocation, int>(location, 1331416523),
+                new KeyValuePair<Geolocation, int>(location, 1331416777)
+            };
             PrecipitationObject po = darkSky.Precipitation(list);
             Console.WriteLine("{0}", po.PrecipitationList[0].Type);
             //Assert.AreEqual(expected, actual);
