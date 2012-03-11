@@ -10,6 +10,9 @@ using System.Runtime.Serialization.Json;
 
 namespace DarkSkySharp
 {
+    ///<summary>
+    ///Globals settings used by the DarkSkySharp library. 
+    ///</summary>
     public static class API
     {
         internal static string key = "F000000000000000000000000000000000000000";
@@ -17,11 +20,18 @@ namespace DarkSkySharp
         internal static string userAgent = "DarkSkySharp: v1, .NET CLR";
     }
 
+    ///<summary>
+    ///Simple class that wraps a longitude and latitude
+    ///</summary>
     public class Geolocation
     {
         public double Latitude { get; set; }
         public double Longitude { get; set; }
 
+        ///<summary>
+        ///<param name="lat">Latitude in decimal degrees</param>
+        ///<param name="lon">Longitude in decimal degrees</param>
+        ///</summary>
         public Geolocation(double lat = 42.3916667, double lon = -71.5666667)
         {
             Latitude = lat;
@@ -98,8 +108,11 @@ namespace DarkSkySharp
 
     public class DarkSky
     {
-        public Geolocation Location { get; set; }
-
+        ///<summary>
+        ///Call the DarkSky forecast API.
+        ///<param name="location">lat/lon of location to forecast</param>
+        ///<returns>ForecastObject that represents the v1 forecast return result.</returns>
+        ///</summary>
         public ForecastObject Forecast(Geolocation location)
         {
             string url = String.Format("{0}/forecast/{1}/{2}", API.uri, API.key, location);
@@ -110,6 +123,11 @@ namespace DarkSkySharp
             return forecastObject;
         }
 
+        ///<summary>
+        ///Call the DarkSky precipitation API.
+        ///<param name="location">List of key-value pairs of locations and times.</param>
+        ///<returns>PrecipitationObject that represents the v1 precipitation return result.</returns>
+        ///</summary>
         public PrecipitationObject Precipitation(List<KeyValuePair<Geolocation,int>> locationsAndTimes)
         {
             string query = "";
