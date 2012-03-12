@@ -1,4 +1,7 @@
-﻿using System;
+﻿///
+/// Copyright © 2012 Armando Di Cianno, Noon Shy Software Designs
+///
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;

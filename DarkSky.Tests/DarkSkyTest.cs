@@ -1,4 +1,7 @@
-﻿using DarkSkySharp;
+﻿///
+/// Copyright © 2012 Armando Di Cianno, Noon Shy Software Designs
+///
+using DarkSkySharp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;

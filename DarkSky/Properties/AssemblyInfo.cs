@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("DarkSkySharp")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("C# library for accessing neat-term weather prediction data from Dark Sky - http://darkskyapp.com/")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Noon Shy Software Designs")]
 [assembly: AssemblyProduct("DarkSkySharp")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyCopyright("Copyright ©  2012 Armando Di Cianno, Noon Shy Software Designs")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
