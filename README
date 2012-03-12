@@ -1,0 +1,8 @@
+DarkSkySharp is a C# library for accessing data from the near-term weather prediction system Dark Sky. It currently implements v1 of the draft API.
+
+DarkSkySharp is not written by the Dark Sky authors, but you can find out more about their amazing system and app at http://darkskyapp.com/ . Sign up for their newsletter, so you can grab the iPhone app when it's released!
+
+Use of DarkSkySharp requires an API key form Dark Sky. If you have a key, you can put it in the API class in DarkSky.cs, compile, and you're good to go.
+
+__
+armando@noonshy.com
